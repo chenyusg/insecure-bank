@@ -14,7 +14,7 @@ pipeline {
     }
     stage('scan for issues') {
       steps {
-        sh " $HOME/.spectral/spectral scan --engine-kinds oss"
+        sh " $HOME/.spectral/spectral scan --engines oss"
       }
     }
   }
